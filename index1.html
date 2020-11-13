@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>examen</title>
+	
+</head>
+	
+
+<body>
+<h1>Produccion de manzanas</h1>
+	
+<img src="manzana.png" id="manzana" width="100px" height="100px">
+	<br>
+<p1>produccion total<input type="number" value="250" name="prot" id="pd"></p1>
+	<button name="mant" onClick="produccionT()">numero de manzanas totales</button>
+	<br>
+	
+	<p2>produccion actual<input type="number" id="pa" value="0"></p2>
+<button onClick="producciona()">numero de manzanas actuales</button>
+	<br>
+<button onClick="cambio1()">+5</button>
+<button onClick="cambio2()">+10</button>
+<button onClick="cambio3()">+15</button>
+<button onClick="cambio4()">+30</button>
+<button onClick="cambio5()">+50</button>
+	<br>
+	<p3>porcentaje<input type="number" id="por"></p3>
+	<button onClick="calcular()">calcular</button>
+<script>
+		
+	function produccionT(){
+		var x= document.getElementById("pd").value
+		var y= x*45
+		window.alert("Maximo manzanas"+y)
+	}
+	function cambio1(){
+	      total = document.getElementById("pa").value
+		  total = parseInt(total) + 5
+      
+			document.getElementById("pa").value = total
+	}
+		function cambio2(){
+	      total = document.getElementById("pa").value
+		  total = parseInt(total) + 10
+      
+			document.getElementById("pa").value = total
+	}
+		function cambio3(){
+	      total = document.getElementById("pa").value
+		  total = parseInt(total) + 15
+      
+			document.getElementById("pa").value = total
+	}
+		function cambio4(){
+	      total = document.getElementById("pa").value
+		  total = parseInt(total) + 30
+      
+			document.getElementById("pa").value = total
+	}
+		function cambio5(){
+	      total = document.getElementById("pa").value
+		  total = parseInt(total) + 50
+      
+			document.getElementById("pa").value = total
+	}
+	
+	 function calcular(){
+		 ciona= document.getElementById("pa").value;
+		 var produccionT= document.getElementById("pd").value;
+		 var tot= (produccionT*100)/producciona;
+          documen		 document.getElementById("por").vue = total
+		 if(tot>=70){
+			 document.getElementById("manzana").src="campo.jpg";
+			}else{
+				document.getElementById("manzana").src="manzana.png";
+            
+			}
+		
+
+	
+	
+	
+	
+	
+	
+	
+	</script>
+</body>
+</html>
